@@ -1,0 +1,55 @@
+{{extend '../_layouts/home.html'}}
+
+{{block 'title'}}{{'Transformer - Homepage'}}{{/block}}
+
+{{block 'body'}}
+<section class="container">
+  {{include '../_partials/settings-nav.html'}}
+  <div class="col-md-5">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Account</label>
+        <p class="form-control-static">email@example.com</p>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Nickname</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Info</label>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Gender</label>
+        <div>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Encrypt
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Birthday</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+      </div>
+      <button type="submit" class="btn btn-success">Save</button>
+    </form>
+  </div>
+  <div class="col-md-2 profile-avatar">
+    <dl>
+      <dt>Portrait Settings</dt>
+      <dd>
+        <img class="avatar" width="150" height="150" src="../public/img/avatar-max-img.png" alt="">
+        <div>
+          <button class="btn btn-default" href="">Upload new picture</button>
+        </div>
+      </dd>
+    </dl>
+  </div>
+</section>
+{{/block}}
